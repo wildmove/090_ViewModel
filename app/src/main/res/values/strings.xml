@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">View Model Learn</string>
+    <string name="Laki">Laki-laki</string>
+    <string name="Perempuan">Perempuan</string>
+</resources>
