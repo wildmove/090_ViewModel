@@ -156,7 +156,7 @@ fun TampilForm(cobaViewModel: CobaViewModel = viewModel()) {
         Button(modifier = Modifier.fillMaxWidth(),
             onClick = { cobaViewModel.insertData(textNama, textTlp, email,  dataForm.sex, dataForm.statusPernikahan, alamat) })
         {
-            Text(text = "Submit")
+            Text(text = "Register")
         }
         TeksHasil( jenisK = cobaViewModel.jenisKl, status= cobaViewModel.statusNikah, alamat= cobaViewModel.alamat, email = cobaViewModel.email,)
     }
@@ -243,7 +243,7 @@ fun TeksHasil(jenisK: String, status: String, alamat: String, email: String) {
                     .padding(horizontal = 10.dp, vertical = 4.dp)
             )*/
             Text(
-                text = "Jenis Kelamin : " + jenisK,
+                text = "Jenis Kelamin : " + email,
                 modifier = Modifier
                     .padding(horizontal = 10.dp, vertical = 4.dp)
             )
@@ -257,8 +257,9 @@ fun TeksHasil(jenisK: String, status: String, alamat: String, email: String) {
                 modifier = Modifier
                     .padding(horizontal = 10.dp, vertical = 4.dp)
             )
+
             Text(
-                text = "Email : " + email,
+                text = "Email : " + jenisK,
                 modifier = Modifier
                     .padding(horizontal = 10.dp, vertical = 4.dp)
             )
